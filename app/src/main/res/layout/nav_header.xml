@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/header"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/header"
+        android:textColor="@color/colorNav"
+        android:textSize="22sp"
+        android:text="@string/header"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_star_24dp"
+            android:text="@string/collection"
+            android:textSize="20sp"
+            android:textColor="@color/colorNav"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_file_download_24dp"
+            android:text="@string/download"
+            android:textSize="20sp"
+            android:textColor="@color/colorNav"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+</RelativeLayout>
